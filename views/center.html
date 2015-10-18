@@ -1,0 +1,66 @@
+ <ion-header-bar>
+	<h1 class="title">我</h1>
+</ion-header-bar>
+<ion-content ng-controller="CenterController">
+	<ion-list>
+		<ion-item class="item-divider"></ion-item>
+
+		<ion-item class="item-thumbnail-left item-icon-right"  href="#">
+			<img src="images/1.jpg">
+			<br/>
+			<h2>{{wechat}}</h2>
+			<p>微信号：{{wechat}}</p>
+			<i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+		</ion-item>
+
+		<ion-item class="item-divider"></ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-camera-outline"></i>
+          相册
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-bookmarks-outline"></i>
+          收藏
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-book-outline"></i>
+          钱包
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-folder-outline"></i>
+          卡包
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item-divider"></ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-star-outline"></i>
+          表情
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item-divider"></ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#/me/setting" style="line-height:10px;">
+          <i class="icon ion-ios-gear-outline"></i>
+          设置
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item-divider"></ion-item>
+
+   </ion-list>
+</ion-content>
+<ion-footer-bar>
+	<ion-tabs class="tabs-icon-top">
+		<ion-tab ng-repeat="m in menu" title="{{m.name}}" icon="{{m.icon}}" href="{{m.href}}" icon-on="{{m.on_icon}}"></ion-tab>
+	</ion-tabs>
+</ion-footer-bar>

@@ -1,0 +1,36 @@
+<ion-header-bar>
+	<a class="button icon-left ion-ios-arrow-left button-clear button-dark" href="#/contact">通讯录</a>
+	<h1 class="title">详细资料</h1>
+</ion-header-bar>
+<ion-content ng-controller="UserInfoController">
+
+	<ion-item class="item-divider"></ion-item>
+    <ion-item class="item-thumbnail-left"  href="#">
+        <img src="{{userinfo.img}}">
+        <br/>
+        <h2>{{userinfo.name}}</h2>
+        <p>微信号：{{userinfo.name}}</p>
+    </ion-item>
+
+    <ion-item class="item-divider"></ion-item>
+    <ion-item class="item item-icon-right" href="#" style="line-height:10px;">
+      设置备注与标签
+      <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+    </ion-item>
+    <ion-item class="item item-icon-right" href="#" style="line-height:10px;">
+      电话号码 <span>15814643523</span>
+    </ion-item>
+
+    <ion-item class="item-divider"></ion-item>
+    <ion-item class="item item-icon-right" href="#" style="line-height:10px;">
+      更多
+      <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+    </ion-item>
+
+    <ion-item class="item-divider"></ion-item>
+    <div class="content padding">
+        <button class="button button-block button-balanced">发消息</button>
+        <button class="button button-block button-light">视频聊天</button>
+    </div>
+
+</ion-content>

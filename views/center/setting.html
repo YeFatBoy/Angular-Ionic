@@ -1,0 +1,43 @@
+<ion-header-bar>
+	<a class="button icon-left ion-ios-arrow-left button-clear button-dark" href="#/me">我</a>
+	<h1 class="title">设置</h1>
+</ion-header-bar>
+<ion-content ng-controller="SettingController">
+
+	<ion-item class="item-divider"></ion-item>
+
+    <ion-item class="item item-icon-right" href="#/me/setting/safe" style="line-height:10px;">
+      账号与安全
+      <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+    </ion-item>
+
+	<ion-item class="item-divider"></ion-item>
+
+    <ion-item class="item item-icon-right" href="#/me/setting/message" style="line-height:10px;">
+      新消息与通知
+      <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+    </ion-item>
+
+    <ion-item class="item item-icon-right" href="#/me/setting/private" style="line-height:10px;">
+      隐私
+      <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+    </ion-item>
+
+    <ion-item class="item item-icon-right" href="#/me/setting/common" style="line-height:10px;">
+      通用
+      <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+    </ion-item>
+
+    <ion-item class="item-divider"></ion-item>
+
+    <ion-item class="item item-icon-right" href="#/me/setting/about" style="line-height:10px;">
+      关于微信
+      <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+    </ion-item>
+
+    <ion-item class="item-divider"></ion-item>
+
+    <ion-item class="item" ng-click="show()" style="line-height:10px;text-align: center;">
+      退出登录
+    </ion-item>
+</ion-content>

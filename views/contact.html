@@ -1,0 +1,48 @@
+ <ion-header-bar>
+	<h1 class="title">通讯录</h1>
+</ion-header-bar>
+<ion-content ng-controller="ContactsController">
+
+<ion-item class="item-divider"></ion-item>
+<ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+  <i class="icon ion-ios-personadd-outline"></i>
+  新的朋友
+  <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+</ion-item>
+
+<ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+  <i class="icon ion-ios-people-outline"></i>
+ 	群聊
+  <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+</ion-item>
+
+<ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+  <i class="icon ion-ios-book-outline"></i>
+  标签
+  <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+</ion-item>
+
+<ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+  <i class="icon ion-ios-flag-outline"></i>
+  公众号
+  <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+</ion-item>
+
+<ion-list ng-repeat="item in items">
+	<ion-item class="item-divider">{{item['index']}}</ion-item>
+	<ion-item ng-repeat="list in item['list']" 
+		item="item"
+		href="#/contact/userinfo/{{list.id}}" class="item-remove-animate item-avatar">
+			<img src="{{list.img}}">
+			<h2>{{list.name}}-{{list.id}}</h2>
+			<p>{{list.description}}</p>
+		</ion-item>
+</ion-list>
+
+</ion-content>
+<ion-footer-bar>
+	<ion-tabs class="tabs-icon-top">
+		<ion-tab ng-repeat="m in menu" title="{{m.name}}" icon="{{m.icon}}" href="{{m.href}}" icon-on="{{m.on_icon}}"></ion-tab>
+	</ion-tabs>
+</ion-footer-bar>
+

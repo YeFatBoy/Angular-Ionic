@@ -1,0 +1,65 @@
+ <ion-header-bar>
+	<h1 class="title">发现</h1>
+</ion-header-bar>
+<ion-content ng-controller="FindController">
+	<ion-list>
+
+		<ion-item class="item-divider"></ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-navigate-outline"></i>
+          朋友圈
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item-divider"></ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-videocam-outline"></i>
+          扫一扫
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-film-outline"></i>
+          摇一摇
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item-divider"></ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-people"></i>
+          附近的人
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-recording-outline"></i>
+          漂流瓶
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item-divider"></ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-cart-outline"></i>
+          购物
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" href="#" style="line-height:10px;">
+          <i class="icon ion-ios-game-controller-b-outline"></i>
+          游戏
+          <i class="icon ion-ios-arrow-right" style="font-size:20px;"></i>
+        </ion-item>
+
+        <ion-item class="item-divider"></ion-item>
+        
+   </ion-list>
+</ion-content>
+<ion-footer-bar>
+	<ion-tabs class="tabs-icon-top">
+		<ion-tab ng-repeat="m in menu" title="{{m.name}}" icon="{{m.icon}}" href="{{m.href}}" icon-on="{{m.on_icon}}"></ion-tab>
+	</ion-tabs>
+</ion-footer-bar>
